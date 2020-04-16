@@ -1,0 +1,93 @@
+body {
+    margin: 0px;
+    background-color: #E6E6E6;
+    font-family: 'comfortaa';
+}
+
+/* Left section of top container */
+
+.top-container {
+    /* border: 2px solid red; */
+}
+.intro-left {
+    float: left;
+    width: 49%;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    padding: 0 auto;
+    height: 100vh;
+}
+
+.profile-picture {
+    width: 50%;
+    display: block;
+    margin: 20% auto;
+}
+
+/* Right section of top container */
+
+.intro-right {
+    background-color:#B7DEE8 ;
+    float: right;
+    width: 50.5%;
+    /* border: 2px solid red; */
+    text-align: center;
+    height: 100vh;
+}
+
+.intro-header {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 30% auto 5% auto;
+}
+
+#intro-blog {
+    margin: 25% auto 5% auto;
+
+}
+
+.arrow {
+    position: relative;
+    width: 40px;
+    animation-name: hop;
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes hop {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: 0px;
+    }
+
+}
+
+/* Blog container */
+
+.sidebar {
+    float: left;
+    margin;
+    width: 30%;
+    height: 20%;
+    padding: auto;
+}
+
+.sidebar ul {
+    margin-left: 200px;
+}
+
+.reflections-header {
+    padding: 50px;
+    margin-left: 170px;
+}
+
+.sidebar li {
+    padding-top: 40px;
+}
+
