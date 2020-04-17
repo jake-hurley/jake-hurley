@@ -5,6 +5,15 @@ body {
     margin: 0 auto;
 }
 
+.home-button a {
+    text-decoration: none;
+    color: black;
+}
+
+.home-button a:hover {
+    opacity: 0.5;
+}
+
 h2 {
     text-decoration: underline;
 }
