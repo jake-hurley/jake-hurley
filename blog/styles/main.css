@@ -29,7 +29,7 @@ body {
 .intro-right {
     background-color:#B7DEE8 ;
     float: right;
-    width: 50.5%;
+    width: 50%;
     /* border: 2px solid red; */
     text-align: center;
     height: 100vh;
@@ -40,6 +40,7 @@ body {
     font-weight: 700;
     margin: 30% auto 5% auto;
 }
+
 
 .intro-blog {
     margin: 25% auto 5% auto;
@@ -81,6 +82,7 @@ body {
     float: left;
     text-align: center;
     width: 100%;
+ 
 }
 
 .about-me-header {
@@ -91,37 +93,64 @@ body {
     
     width: 40%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 20px 100px 20px;
 }
 
-.sidebar {
+
+.blog-container {
+    background-color:#B7DEE8;
     float: left;
-    margin: 0 auto;
-    width: 100%;
+    width: 50%;
     height: 20%;
     padding: auto;
     text-align: center;
 }
 
-.sidebar ul {
-    margin: 0 auto;
-}
-
-#reflections-header {
-    padding: 100px;
-    margin: 0 auto;
-}
-
-.sidebar li {
+.blog-container li {
+    position: relative;
+    right:20px;
     list-style: none;
-    display: inline;
     font-size: 30px;
-    padding: 65px;
+    padding: 25px;
     margin: 0 auto;
     color: #000000;
 }
 
-.sidebar a {
+.blog-container a {
+    text-decoration: none;
+    color: #000;
+}
+
+.reflections-container {
+    float:right;
+    margin: 0 auto;
+    width: 49%;
+    height: 20%;
+    padding: auto;
+    text-align: center;
+
+}
+
+.reflections-container ul {
+    margin: 0 auto;
+}
+
+#reflections-header {
+    padding: 50px 100px 50px 100px;
+    margin: 0 auto;
+}
+
+.reflections-container li {
+    position: relative;
+    right:20px;
+    list-style: none;
+    font-size: 30px;
+    padding: 25px;
+    margin: 0 auto;
+    color: #000000;
+}
+
+.reflections-container a {
     text-decoration: none;
     color: #000;
 }
@@ -144,4 +173,8 @@ a:hover {
 
 .github:hover {
     opacity: 0.5;
+}
+
+.no-link {
+    opacity: 0;
 }
