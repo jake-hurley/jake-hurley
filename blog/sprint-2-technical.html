@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sprint 2 Technical</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles/blog-positioning-post.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="blog-name">Sprint 2 Technical Blog</h1>
+
+        <hr>
+
+        <h1 class="post-title">CSS Position: The difference between Absolute, Relative, and Fixed positioning.</h1>
+
+        <h2>Absolute Positioning:</h2>
+
+        <p>Absolute Positioning takes the chosen Element out of the websites flow. It will still appear in the browser, but its position will be ignored by all other Elements allowing the chosen Element to overlay any other Elements on the page.
+            The position can be adjusted by four different values <em>top, bottom, left, right</em>. Note that these values push the object away from the set direction (<em>left</em> moves an Element to the right).
+             </p>
+
+        <h2>Syntax:</h2>
+
+        <pre class="syntax">
+            <code>
+                .container {
+                    position:relative
+                }
+
+                .absolute-element {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                }
+            </code>
+        </pre>
+        <div class="position-container">
+
+            <h2>container</h2>
+
+            <div class="normal-element">
+                <h3>Normal Element</h3>
+            </div>
+
+            <div class="absolute-element">
+                <h3>Absolute Element</h3>
+            </div>
+
+        </div>
+
+        
+        <h2 class="best-uses">Best Uses:</h2>
+        
+        <p>Absolute positioning is useful for when an element needs to overlay other sections of you webpage without breaking the positioning of other Elements. It allows you to accurately position an object on a page which means there are no spacial limitations, so long as its within its parent container.
+            It should be used with care and only when it is impossible to position using other methods. As accurate as it is, having dozens of elements that need to be manually changed everytime something new is added will only make more work. 
+        </p>
+
+        <hr>
+
+
+        <h2 class="relative-title">Relative Positioning:</h2>
+
+        <p> Unlike Absolute positioning. The relative property keeps the element within the websites flow. But now instead of its position being based on its parent container or root, the position will be based on where its initial position was on the page (It is relative to itself!).
+            Much like Absolute it provides the power to overlay other Elements on the page using the same <em>top, bottom, left, right</em> values. But wont change the initial page layout when initiated.
+            
+             </p>
+
+        <h2>Syntax:</h2>
+
+        <pre class="syntax">
+            <code>
+                .relative-element {
+                    position: relative;
+                    top: 85px;
+                    left: 40px;
+                }
+            </code>
+        </pre>
+
+        <div class="position-container">
+
+            <h2>container</h2>
+
+            <div class="relative-origin">
+                <h3>Relative origin</h3>
+            </div>
+
+            <div class="relative-element">
+                <h3>Relative Element</h3>
+            </div>
+
+            <div class="normal-element">
+                <h3>Normal Element</h3>
+            </div>
+
+            
+
+        </div>
+
+        <h2 class="best-uses">Best Uses:</h2>
+        
+        <p>Relative positioning is good for when a particular Element needs to be nudged or moved to a certain position without jeapardising the positions of other Elements. Note that when another element is added, the position of the element will move with everything else. This is because the position is relative to the origin of the element, which has just been moved.
+
+        </p>
+
+        <hr>
+
+
+        <h2 class="relative-title">Fixed Positioning:</h2>
+
+        <p> Fixed Positioning is the exact same as Absolute Positioning with an exception. When fixed position is applied. The element will ignore scrolling, and will stay exactly where it is on the page. (You may have noticed it when you first opened the page!).
+            
+             </p>
+
+        <h2>Syntax:</h2>
+        
+        <pre class="syntax">
+            <code>
+                .fixed-element {
+                    position: fixed;
+                    top: 600px;
+                    left: 1500px;
+                }
+            </code>
+        
+        </pre>
+        </p>    
+
+        <div class="fixed-element">
+            <h3>I am a Fixed Element!</h3>
+        </div>
+
+        <h2>Best Uses:</h2>
+        
+        <p>Fixed positioning is great for when you want a regularly accessible feature to stay on the page. Things like chat bubbles, sidebars and help buttons are all common uses of fixed Positioning </p>
+
+        <hr>
+
+
+    </body>
+</html>
