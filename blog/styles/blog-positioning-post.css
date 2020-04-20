@@ -5,16 +5,16 @@ body {
     margin: 0 auto;
 }
 
-.home-button a {
+a {
     text-decoration: none;
     color: black;
 }
 
-.home-button a:hover {
+a:hover {
     opacity: 0.5;
 }
 
-.home-button a:clicked {
+a:clicked {
     text-decoration: none;
     color: black;
 }
