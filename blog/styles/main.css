@@ -43,10 +43,14 @@ body {
 
 
 .intro-blog {
-    margin: 25% auto 5% auto;
+    margin: 5% 4% 0.5% auto;
     text-decoration: none;
     color: black;
 
+}
+
+.intro-blog-list {
+    list-style: none ;
 }
 
 .intro-blog:hover {
@@ -162,10 +166,6 @@ body {
 
 }
 
-.reflections-container ul {
-    margin: 0 auto;
-}
-
 #reflections-header {
     padding: 50px 100px 50px 100px;
     margin: 0 auto;
@@ -209,3 +209,35 @@ a:hover {
 .no-link {
     opacity: 0;
 }
+
+
+@media only screen and (max-width: 1024px) {
+    .intro-right {
+        height: 800px;
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    .intro-left{
+        height: 700px;
+        display: none;
+        float: none;
+    }
+
+    .intro-header {
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+
+    .about-statement {
+        font-size: 1.3em;
+        
+    }
+
+
+
+
+}
+
+
