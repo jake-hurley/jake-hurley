@@ -211,7 +211,60 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 320px) and (max-width:480px) {
+    .intro-header {
+        font-size: 2.2em;
+    }
+
+    em {
+        font-size: 0.8em;
+    }
+
+    .intro-blog-list {
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .about-me-header {
+        font-size: 1.3em;
+        width: 95%;
+        padding-top: 50px;
+    }
+
+    p.about-statement {
+        font-size: 1.2em;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        
+    }
+
+    .blog-container {
+        display: block;
+        width: 100%;
+    }
+
+    .reflections-container {
+        display: block;
+        width: 100%;
+    }
+
+    .cultural-container {
+        display: block;
+        width: 100%;
+    }
+
+    h1#reflections-header {
+        font-size: 1.8em;
+        width: 50%;
+        text-align: left;
+    }
+
+}
+
+@media only screen and (max-width: 786px) {
     .intro-right {
         height: 800px;
         float: none;
